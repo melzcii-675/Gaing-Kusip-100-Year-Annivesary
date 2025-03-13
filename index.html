@@ -1,0 +1,159 @@
+<!-----
+news-website/
+│── index.html
+│── styles.css
+│── images/
+│── fonts/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+
+        <a href="#" class="brand"><img src="Photos/logo.jpg" height="100"></a>
+        <h1>Gaing Kusip 100 Years Anniversary</h1>
+        <p>Mini News Dashboard</p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="Store/Programs.html">SCHEDULE</a></li>
+            <li><a href="#">NEWS</a></li>
+            <!---<li><a href="#">UPDATES</a></li>-->
+            <li><a href="Store/index.html">STORE</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <main>
+            <article>
+                <img src="Photos/edwin.jpg" alt="News Image">
+
+                <p>Date: 23 February 2025</p>
+                <h2>Mr Edwin Rumbam Speaking On the Launching Of 100 Years Anniversary of Gain Kusip at Hauta Congregaton</h2>
+                <p>ELC-Gaing Kusip Parish is one of the major Parish in ELC-Boana District withhold many Congregations Compare to other Parish in ELC-Boana District. It has been since 1925 the<span id = "dots">...</span><span id="more"> Missionary arrives with Gospal and show us the light of Christ.In remeberance of this we here now prepare to Celebrate the 100 Years Anniversary of Gospal in our Parish.
+                This is Edwin Rumbam Speaking on the Launching of the 100th Year Celebration at Hauta Congregation, Gaing Kusip Parish in ELC-Boana Districts. He Said he will be there to support in this time of preparation towards the Annivesary Celebration this Christmas 2025. He already started supporting us with some Goodies which was already put on sale now. You can find it on <a href="Store/index.html">  Gaing Kusip Online Store</a> or you can contact us for more information. He alos Said he will be working with us to build Gaing Kusip Resource Center at Hauta Congregation. This Program is still Proccessing, we will be notified when the process is done.
+            </span></p>
+                 <button onclick="fun1 ()" id="btn">Read More</button>
+        
+
+            </article>
+            <article>
+                <img src="Photos/Pastor.jpg" alt="News Image">
+                <p>Wowom Village</p>
+
+                <p>Date: 07th February 2025</p>
+                <h2>Pastor Ismael Motoro Leaving Gaing Kusip Parish</h2>
+                <p>The Day of mourning has arrived, on the 7th of February 2025 Gaing Kusip Parish arrange to allow Pr Ismael Motoroc travel to his home home to see his family members and relatives at Kundiawa, Chimbu Province, after Serving Gaing Kusip Parish for eleve years it was memorable event that put<span id = "dots1">...</span><span id="more1">
+                Gain Kusip Parish and Hauta Congregation to a big Mourn. Upper congregation of Hauta Congregation Gathered at Wowom village for the final good bye, Kasing, Munguleng and Gufin Gathered in Moimbiring, another gethering Spot on Gain School, Extra Market, Finally he met with Gaing Kusip Town at Hunka and made his final good bye with a final word to ELC-Gaing Kusip Parish as he travel home.
+                 </span></p>
+                 <button onclick="fun2 ()" id="btn1">Read More</button>
+        
+
+            </article>
+
+            <article>
+                <img src="Photos/history.jpg" alt="News Image">
+                <p>Date: 07th February 2025</p>
+                <h2>Pr Gembube Wongege Speaking On the Launching Of 100 Years Anniversary</h2>
+                <p>With Gospal that brought to us since the Missionary has arrived, we pleased to have have this men bihind<span id = "dots2">...</span><span id="more2">
+            us. Here is Pr Gembube Wongege giving brief history of how and when did the missionary arrived in Gaing kusip Parish he. He said he will provide the full history during the Annivessary Celebration this Christmas 2025. </span></p>
+                 <button onclick="fun3 ()" id="btn2">Read More</button>
+        
+
+            </article>
+
+           <h1> Program Portfolio</h1>
+
+           <p> Click the Button below to download Our Schedule</p>
+           <a href="Docs/celProg.pdf" download>
+            <button>Download Schedule</button></a>
+
+
+
+
+
+        </main>
+
+        <!-- Sidebar 
+        <aside>
+            <h3>Trending News</h3>
+            <ul>
+                <li><a href="#">Yet To Code</a></li>
+                <li><a href="#">Major Sports Event Highlights</a></li>
+          
+            </ul>
+        </aside>
+-->
+    </div>
+
+     <script type="text/javascript">
+            //Javascript for Read More
+            
+            function fun1 (){
+                var dots = document.getElementById("dots");
+                var mt = document.getElementById("more");
+                var bt = document.getElementById("btn");
+                if (dots.style.display === "none"){
+                    dots.style.display = "inline";
+                    mt.style.display = "none";
+                    bt.innerHTML = "Read More";
+                    
+                } else {
+                    dots.style.display = "none";
+                    mt.style.display = "inline";
+                    bt.innerHTML = "Read Less";
+                }
+            }
+               function fun2 (){
+                var dots1 = document.getElementById("dots1");
+                var mt1 = document.getElementById("more1");
+                var bt1 = document.getElementById("btn1");
+                if (dots1.style.display === "none"){
+                    dots1.style.display = "inline";
+                    mt1.style.display = "none";
+                    bt1.innerHTML = "Read More";
+                    
+                } else {
+                    dots1.style.display = "none";
+                    mt1.style.display = "inline";
+                    bt1.innerHTML = "Read Less";
+                }
+            }
+                    function fun3 (){
+                var dots2 = document.getElementById("dots2");
+                var mt2 = document.getElementById("more2");
+                var bt2 = document.getElementById("btn2");
+                if (dots2.style.display === "none"){
+                    dots2.style.display = "inline";
+                    mt2.style.display = "none";
+                    bt2.innerHTML = "Read More";
+                    
+                } else {
+                    dots2.style.display = "none";
+                    mt2.style.display = "inline";
+                    bt2.innerHTML = "Read Less";
+                }
+            }
+       
+       
+        </script>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Gaing Kusip News. All Rights Reserved.</p>
+        <h6>Developed by Melzcii675</h6>
+    </footer>
+
+</body>
+</html>
